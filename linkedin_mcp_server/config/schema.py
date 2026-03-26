@@ -18,7 +18,7 @@ class ConfigurationError(Exception):
 class BrowserConfig:
     """Configuration for browser settings."""
 
-    headless: bool = True
+    headless: bool = False
     slow_mo: int = 0  # Milliseconds between browser actions (debugging)
     user_agent: str | None = None  # Custom browser user agent
     viewport_width: int = 1280

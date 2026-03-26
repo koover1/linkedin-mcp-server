@@ -82,7 +82,7 @@ class CompactFormatter(logging.Formatter):
         # Format the time as HH:MM:SS only
         record_copy.asctime = self.formatTime(record_copy, datefmt="%H:%M:%S")
 
-        return f"{record_copy.asctime} - {record_copy.name} - {record.levelname} - {record.getMessage()}"
+        return f"{record_copy.asctime} - {record_copy.name} - {record_copy.levelname} - {record_copy.getMessage()}"
 
 
 def configure_logging(log_level: str = "WARNING", json_format: bool = False) -> None:
